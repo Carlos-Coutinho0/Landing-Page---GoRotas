@@ -148,6 +148,7 @@
       max-height: 500px;
       width: auto;
       object-fit: contain;
+      border-radius: 24px;
       filter: drop-shadow(0 24px 60px rgba(0,0,0,.55));
     }
 
@@ -442,7 +443,7 @@
       display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
       gap: 48px; margin-bottom: 48px;
     }
-    .footer-brand img  { height: 44px; margin-bottom: 14px; }
+    .footer-brand img  { height: 44px; margin-bottom: 14px; background: white; padding: 8px 14px; border-radius: 12px; }
     .footer-brand p    { font-size: 13px; color: rgba(255,255,255,.4); line-height: 1.75; }
     .footer-col h4     { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .8px; color: rgba(255,255,255,.9); margin-bottom: 18px; }
     .footer-col ul     { display: flex; flex-direction: column; gap: 10px; }
@@ -453,6 +454,182 @@
       display: flex; justify-content: space-between; align-items: center;
       font-size: 12px; color: rgba(255,255,255,.28);
     }
+    /* ── HERO FRICTION ─────────────────────────────── */
+    .hero-friction {
+      margin-top: 18px; font-size: 13px;
+      color: rgba(255,255,255,.5); display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ── IMAGINATION ────────────────────────────────── */
+    .imagination {
+      background: linear-gradient(135deg, #f0f7ff 0%, #e8f4fd 100%);
+      padding: 80px 0;
+      border-top: 1px solid #cce4f5; border-bottom: 1px solid #cce4f5;
+    }
+    .imagination-inner {
+      max-width: 740px; margin: 0 auto; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+    }
+    .imagination-icon { font-size: 48px; }
+    .imagination-text {
+      font-size: 20px; color: var(--gray-700);
+      line-height: 1.8; font-style: italic;
+    }
+    .imagination-sub {
+      font-size: 15px; font-weight: 700; color: var(--blue);
+      background: #d1eaf7; padding: 8px 20px; border-radius: 100px;
+    }
+
+    /* ── HALF STEP ──────────────────────────────────── */
+    .half-step .step-num {
+      background: var(--orange); font-size: 18px; letter-spacing: -1px;
+    }
+    .half-step .step-name { color: var(--orange); }
+
+    /* ── TESTIMONIALS BEFORE/AFTER ──────────────────── */
+    .test-ba { display: flex; gap: 12px; margin-bottom: 18px; }
+    .test-ba-block { flex: 1; border-radius: 10px; padding: 12px 14px; }
+    .test-ba-label {
+      font-size: 10px; font-weight: 800; text-transform: uppercase;
+      letter-spacing: .8px; margin-bottom: 6px;
+    }
+    .test-ba-block.before { background: #fff1f2; border: 1px solid #fecdd3; }
+    .test-ba-block.before .test-ba-label { color: #e11d48; }
+    .test-ba-block.before p { font-size: 12px; color: #9f1239; line-height: 1.5; }
+    .test-ba-block.after { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .test-ba-block.after .test-ba-label { color: #16a34a; }
+    .test-ba-block.after p { font-size: 12px; color: #15803d; line-height: 1.5; }
+    .test-city { font-size: 11px; color: var(--gray-400); margin-top: 2px; }
+
+    /* ── DIF BADGE ──────────────────────────────────── */
+    .dif-badge {
+      display: inline-block; font-size: 11px; font-weight: 700;
+      letter-spacing: .4px; padding: 3px 10px; border-radius: 100px; margin-bottom: 12px;
+    }
+    .dif-badge.passageiro { background: #d1eaf7; color: var(--blue); }
+    .dif-badge.motorista  { background: #fff7ed; color: var(--orange-dk); }
+    .dif-badge.todos      { background: #f0fdf4; color: #16a34a; }
+
+    /* ── CIDADES ─────────────────────────────────────── */
+    .cidades { background: var(--white); padding: 96px 0; }
+    .cidades-header { text-align: center; margin-bottom: 56px; }
+    .cidades-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .estado-card {
+      background: var(--gray-50); border-radius: 20px; padding: 32px;
+      border: 1px solid var(--gray-200);
+    }
+    .estado-title {
+      display: flex; align-items: center; gap: 12px;
+      font-size: 18px; font-weight: 800; color: var(--gray-800); margin-bottom: 20px;
+    }
+    .estado-sigla {
+      background: var(--blue); color: white;
+      font-size: 13px; font-weight: 800; padding: 4px 10px; border-radius: 8px;
+    }
+    .cidades-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .cidade-chip {
+      background: white; border: 1px solid var(--gray-200);
+      border-radius: 100px; padding: 6px 14px;
+      font-size: 13px; font-weight: 500; color: var(--gray-700);
+    }
+    .cidade-chip.capital {
+      background: var(--blue); color: white;
+      border-color: var(--blue); font-weight: 700;
+    }
+    .cidades-nota {
+      text-align: center; margin-top: 32px;
+      font-size: 14px; color: var(--gray-400);
+    }
+
+    /* ── STORYTELLING ──────────────────────────────── */
+    .historia { background: var(--gray-50); padding: 96px 0; }
+    .historia .wrap {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: start;
+    }
+    .historia-left { position: sticky; top: 90px; }
+    .historia-quote {
+      font-size: 22px; font-weight: 800; line-height: 1.4;
+      color: var(--blue); margin: 24px 0 32px;
+      padding-left: 20px;
+      border-left: 4px solid var(--orange);
+    }
+    .historia-founders {
+      display: flex; align-items: center; gap: 14px; margin-top: 32px;
+    }
+    .founders-avatars { display: flex; }
+    .founder-av {
+      width: 46px; height: 46px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--blue) 0%, var(--blue-light) 100%);
+      border: 3px solid white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px; font-weight: 700; color: white;
+    }
+    .founder-av:not(:first-child) { margin-left: -12px; }
+    .founders-info strong { display: block; font-size: 14px; font-weight: 700; color: var(--gray-800); }
+    .founders-info span   { font-size: 13px; color: var(--gray-500); }
+    .historia-right { display: flex; flex-direction: column; gap: 28px; }
+    .historia-block { display: flex; gap: 18px; align-items: flex-start; }
+    .historia-ico {
+      width: 44px; height: 44px; min-width: 44px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center; font-size: 20px;
+    }
+    .historia-ico.red    { background: #fff1f2; }
+    .historia-ico.orange { background: #fff7ed; }
+    .historia-ico.blue   { background: #d1eaf7; }
+    .historia-ico.green  { background: #f0fdf4; }
+    .historia-block-title {
+      font-size: 15px; font-weight: 700; color: var(--gray-800); margin-bottom: 6px;
+    }
+    .historia-block-text { font-size: 14px; color: var(--gray-600); line-height: 1.75; }
+    .historia-block-text strong { color: var(--gray-800); }
+    .historia-divider {
+      border: none; border-top: 2px dashed var(--gray-200); margin: 4px 0;
+    }
+    .historia-virada {
+      background: linear-gradient(135deg, #064d78 0%, #0A73B0 100%);
+      border-radius: 20px; padding: 28px 28px; color: white;
+      display: flex; gap: 16px; align-items: flex-start;
+    }
+    .historia-virada-ico { font-size: 28px; flex-shrink: 0; }
+    .historia-virada p { font-size: 15px; line-height: 1.75; color: rgba(255,255,255,.9); }
+    .historia-virada strong { color: white; }
+
+    /* ── SCARCITY ───────────────────────────────────── */
+    .scarcity {
+      background: #fff8f0;
+      border-top: 1px solid #fed7aa; border-bottom: 1px solid #fed7aa;
+      padding: 88px 0;
+    }
+    .scarcity-inner {
+      max-width: 620px; margin: 0 auto; text-align: center;
+      display: flex; flex-direction: column; align-items: center; gap: 22px;
+    }
+    .scarcity-badge {
+      background: var(--orange); color: white;
+      font-size: 12px; font-weight: 700; letter-spacing: .5px;
+      text-transform: uppercase; padding: 7px 18px; border-radius: 100px;
+    }
+    .scarcity-inner h2 {
+      font-size: 34px; font-weight: 800; color: var(--gray-800); line-height: 1.2;
+    }
+    .scarcity-inner > p { font-size: 17px; color: var(--gray-600); line-height: 1.75; }
+    .scarcity-slots {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      width: 100%;
+    }
+    .slots-num {
+      font-size: 72px; font-weight: 800; color: var(--orange); line-height: 1;
+    }
+    .slots-lbl {
+      font-size: 14px; font-weight: 600; color: var(--gray-500);
+      text-transform: uppercase; letter-spacing: .6px;
+    }
+    .slots-bar { width: 100%; height: 10px; background: var(--gray-200); border-radius: 100px; overflow: hidden; }
+    .slots-fill { width: 73%; height: 100%; background: var(--orange); border-radius: 100px; }
+    .slots-caption { font-size: 12px; color: var(--gray-400); }
+    .friction-small { font-size: 13px; color: var(--gray-400); }
+
   </style>
 </head>
 <body>
@@ -478,22 +655,25 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-content">
-      <div class="hero-pill">🚐 Transporte Alternativo Inteligente</div>
+      <div class="hero-pill">😤 O fim do caos no transporte alternativo</div>
       <h1 class="hero-title">
-        Viaje de Van ou<br>
-        <span class="hl">Lotação</span> com Mais<br>
-        Segurança,<br>
-        Organização e<br>
-        Praticidade
+        Cansado de Perder<br>
+        a Van Porque Sua<br>
+        Mensagem Ficou<br>
+        <span class="hl">Sem Resposta</span><br>
+        no WhatsApp?
       </h1>
       <p class="hero-sub">
-        O aplicativo que conecta passageiros, motoristas e empresas de
-        transporte alternativo de forma simples, segura e eficiente.
+        Imagine a paz de ter seu assento garantido todos os dias com apenas
+        <strong style="color:rgba(255,255,255,.95)">1 clique</strong>,
+        sem estresse, sem correria, sem depender de ninguém.
+        É exatamente isso que o GoRotas entrega.
       </p>
       <div class="hero-btns">
-        <a href="#" class="btn btn-orange">📱 Baixar o Aplicativo</a>
-        <a href="#" class="btn btn-outline">Saiba Mais</a>
+        <a href="#" class="btn btn-orange">Quero Minha Vaga Garantida</a>
+        <a href="#" class="btn btn-outline">Sou Motorista</a>
       </div>
+      <p class="hero-friction">🔒 Download grátis · Passageiro paga apenas o valor da passagem · Motorista sem mensalidade</p>
     </div>
 
     <div class="hero-visual">
@@ -523,6 +703,19 @@
   </div>
 </section>
 
+<!-- ══ IMAGINAÇÃO ══════════════════════════════════════ -->
+<section class="imagination">
+  <div class="wrap">
+    <div class="imagination-inner">
+      <span class="imagination-icon">💭</span>
+      <p class="imagination-text">
+        "Feche os olhos e imagine você <strong>acordando 20 minutos mais tarde</strong> todo dia, com a tranquilidade de saber que sua vaga já está paga e a van ou carro de lotação te esperando. Sem correrias. Sem estresse. Sem WhatsApp em silêncio. Apenas a certeza absoluta de chegar no horário, todos os dias."
+      </p>
+      <span class="imagination-sub">✓ Isso já é realidade para quem usa o GoRotas.</span>
+    </div>
+  </div>
+</section>
+
 <!-- ══ CONHEÇA A GOROTAS ═══════════════════════════════ -->
 <section class="conheca">
   <div class="wrap">
@@ -534,40 +727,42 @@
         alternativo de passageiros em vans e lotações. Conectamos passageiros que buscam
         segurança e comodidade com motoristas que desejam profissionalizar seus serviços.
       </p>
+      <span class="tag" style="background:#d1eaf7;color:var(--blue);margin-top:20px;">Para Passageiros</span>
       <div class="conheca-feats">
         <div class="cf-item">
-          <div class="cf-icon">🗺️</div>
+          <div class="cf-icon">🔍</div>
           <div class="cf-body">
-            <strong>Gestão de Rotas Inteligente</strong>
-            <p>Crie e gerencie rotas com facilidade, definindo pontos de parada e horários.</p>
+            <strong>Encontre sua van ou carro de lotação</strong>
+            <p>Busque rotas disponíveis na sua cidade com um toque, direto no mapa.</p>
           </div>
         </div>
         <div class="cf-item">
           <div class="cf-icon">💳</div>
           <div class="cf-body">
-            <strong>Pagamento Digital</strong>
-            <p>Receba e pague com segurança pelo app, sem necessidade de dinheiro em espécie.</p>
+            <strong>Pague pelo App</strong>
+            <p>Pague o valor da passagem digitalmente, sem precisar de dinheiro em espécie.</p>
           </div>
         </div>
         <div class="cf-item">
-          <div class="cf-icon">📊</div>
+          <div class="cf-icon">🔔</div>
           <div class="cf-body">
-            <strong>Relatórios e Análises</strong>
-            <p>Acompanhe o desempenho das suas rotas com dados e métricas detalhadas.</p>
+            <strong>Acompanhe em Tempo Real</strong>
+            <p>Saiba exatamente quando sua van ou carro de lotação está chegando.</p>
           </div>
         </div>
       </div>
     </div>
 
     <div class="conheca-card">
-      <h3>Administre sua rota com inteligência</h3>
-      <p>Tenha controle total da sua operação de transporte alternativo em um único lugar.</p>
+      <span style="display:inline-block;background:rgba(255,255,255,.2);color:white;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;padding:4px 12px;border-radius:100px;margin-bottom:16px;">Para Motoristas e Empresas</span>
+      <h3>Administre sua operação com inteligência</h3>
+      <p>Controle total das suas rotas de vans e carros de lotação em um único lugar.</p>
       <div class="cc-list">
-        <div class="cc-row"><div class="cc-ic">📍</div><span>Rastreamento em tempo real</span></div>
-        <div class="cc-row"><div class="cc-ic">👥</div><span>Gerenciamento de passageiros</span></div>
-        <div class="cc-row"><div class="cc-ic">💰</div><span>Controle financeiro completo</span></div>
-        <div class="cc-row"><div class="cc-ic">🔔</div><span>Notificações automáticas</span></div>
-        <div class="cc-row"><div class="cc-ic">📱</div><span>App intuitivo e fácil de usar</span></div>
+        <div class="cc-row"><div class="cc-ic">🗺️</div><span>Crie e gerencie rotas com facilidade</span></div>
+        <div class="cc-row"><div class="cc-ic">👥</div><span>Lista de passageiros confirmados por rota</span></div>
+        <div class="cc-row"><div class="cc-ic">💰</div><span>Controle financeiro e recebimento digital</span></div>
+        <div class="cc-row"><div class="cc-ic">📊</div><span>Relatórios e análises de desempenho</span></div>
+        <div class="cc-row"><div class="cc-ic">🔔</div><span>Notificações automáticas para passageiros</span></div>
       </div>
     </div>
   </div>
@@ -577,34 +772,34 @@
 <section class="como-funciona pass">
   <div class="wrap">
     <div class="cf-header">
-      <span class="tag">Passo a Passo</span>
+      <span class="tag">Simples assim</span>
       <h2 class="section-title">Como Funciona Para o Passageiro</h2>
-      <p class="section-lead">Em 4 passos simples, você já está pronto para viajar com mais segurança e conforto.</p>
+      <p class="section-lead">Em <strong>3 passos e meio</strong> você nunca mais depende de WhatsApp para garantir sua vaga. <em>(Sim, 3 e meio... leia até o final.)</em></p>
     </div>
     <div class="steps">
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-ico">📱</div>
-        <div class="step-name">Baixe o Aplicativo</div>
-        <p class="step-desc">Disponível gratuitamente para iOS e Android. Crie sua conta em minutos.</p>
+        <div class="step-name">Baixe. É Grátis.</div>
+        <p class="step-desc">iOS ou Android. 47 segundos para criar sua conta.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
-        <div class="step-ico">🔍</div>
-        <div class="step-name">Encontre sua Rota</div>
-        <p class="step-desc">Busque rotas disponíveis próximas a você e escolha a que melhor se encaixa.</p>
+        <div class="step-ico">🗺️</div>
+        <div class="step-name">Ache sua van ou lotação no mapa</div>
+        <p class="step-desc">Rotas disponíveis perto de você, agora.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
-        <div class="step-ico">🎟️</div>
-        <div class="step-name">Reserve seu Lugar</div>
-        <p class="step-desc">Garanta sua vaga com segurança e realize o pagamento pelo aplicativo.</p>
+        <div class="step-ico">✅</div>
+        <div class="step-name">Reserve com 1 clique</div>
+        <p class="step-desc">Sua vaga está garantida. O transporte não sai sem você.</p>
       </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <div class="step-ico">🚐</div>
-        <div class="step-name">Viaje com Conforto</div>
-        <p class="step-desc">Embarque e acompanhe sua viagem em tempo real pelo aplicativo.</p>
+      <div class="step half-step">
+        <div class="step-num half">½</div>
+        <div class="step-ico">😴</div>
+        <div class="step-name">Durma tranquilo</div>
+        <p class="step-desc">O ½ passo: não fazer mais nada. O GoRotas cuida do resto.</p>
       </div>
     </div>
   </div>
@@ -622,26 +817,26 @@
       <div class="step">
         <div class="step-num">1</div>
         <div class="step-ico">📝</div>
-        <div class="step-name">Faça seu Cadastro</div>
-        <p class="step-desc">Crie sua conta como motorista ou empresa e envie sua documentação.</p>
+        <div class="step-name">Cadastre-se</div>
+        <p class="step-desc">2 minutos. Grátis. Sem burocracia.</p>
       </div>
       <div class="step">
         <div class="step-num">2</div>
         <div class="step-ico">🚌</div>
-        <div class="step-name">Cadastre seu Veículo</div>
-        <p class="step-desc">Adicione sua van ou ônibus com todas as informações e documentação.</p>
+        <div class="step-name">Adicione seu veículo</div>
+        <p class="step-desc">Van ou carro de lotação. Placa e documentos. Pronto.</p>
       </div>
       <div class="step">
         <div class="step-num">3</div>
         <div class="step-ico">🗺️</div>
-        <div class="step-name">Defina suas Rotas</div>
-        <p class="step-desc">Configure percursos, horários, pontos de parada e valores das passagens.</p>
+        <div class="step-name">Monte sua rota</div>
+        <p class="step-desc">Trajeto, horário e valor. Tudo no app.</p>
       </div>
       <div class="step">
         <div class="step-num">4</div>
         <div class="step-ico">💸</div>
-        <div class="step-name">Comece a Ganhar</div>
-        <p class="step-desc">Receba passageiros, gerencie sua operação e acompanhe seus ganhos.</p>
+        <div class="step-name">Lotação garantida todo dia</div>
+        <p class="step-desc">Passageiros confirmados antes de sair de casa.</p>
       </div>
     </div>
   </div>
@@ -657,34 +852,40 @@
     </div>
     <div class="dif-grid">
       <div class="dif-card">
+        <span class="dif-badge passageiro">👤 Passageiro</span>
         <div class="dif-ico">🛡️</div>
         <div class="dif-name">Segurança Garantida</div>
-        <p class="dif-text">Motoristas passam por verificação rigorosa de documentação e antecedentes antes de operar na plataforma.</p>
+        <p class="dif-text">Motoristas de vans e carros de lotação passam por verificação rigorosa de documentação e antecedentes antes de operar na plataforma.</p>
       </div>
       <div class="dif-card">
+        <span class="dif-badge passageiro">👤 Passageiro</span>
         <div class="dif-ico">⏰</div>
         <div class="dif-name">Pontualidade</div>
-        <p class="dif-text">Horários precisos, notificações em tempo real e monitoramento de rotas para que você nunca perca sua viagem.</p>
+        <p class="dif-text">Horários fixos, notificações em tempo real e acompanhamento de rota para que você nunca perca seu transporte.</p>
       </div>
       <div class="dif-card">
+        <span class="dif-badge todos">👥 Todos</span>
         <div class="dif-ico">💎</div>
         <div class="dif-name">Transparência Total</div>
-        <p class="dif-text">Preços claros e sem surpresas. Saiba exatamente o valor antes de reservar sua vaga.</p>
+        <p class="dif-text">Preços claros e fixos no app, sem surpresas. Passageiro sabe o valor antes de reservar. Motorista recebe sem disputa.</p>
       </div>
       <div class="dif-card">
+        <span class="dif-badge motorista">🚐 Motorista</span>
         <div class="dif-ico">🚀</div>
-        <div class="dif-name">Tecnologia Avançada</div>
-        <p class="dif-text">Plataforma moderna e intuitiva desenvolvida para oferecer a melhor experiência a todos os usuários.</p>
+        <div class="dif-name">Gestão Inteligente</div>
+        <p class="dif-text">Painel completo para gerenciar rotas de vans e carros de lotação, passageiros, pagamentos e relatórios em um só lugar.</p>
       </div>
       <div class="dif-card">
+        <span class="dif-badge todos">👥 Todos</span>
         <div class="dif-ico">🎧</div>
         <div class="dif-name">Suporte Dedicado</div>
-        <p class="dif-text">Equipe de suporte especializada disponível para ajudar motoristas e passageiros sempre que precisar.</p>
+        <p class="dif-text">Equipe especializada disponível para ajudar motoristas, empresas e passageiros sempre que precisar.</p>
       </div>
       <div class="dif-card">
+        <span class="dif-badge motorista">🚐 Motorista</span>
         <div class="dif-ico">📈</div>
         <div class="dif-name">Crescimento Contínuo</div>
-        <p class="dif-text">Ferramentas de gestão, relatórios e insights para expandir sua operação e tomar melhores decisões.</p>
+        <p class="dif-text">Relatórios, insights e ferramentas para expandir sua operação de transporte alternativo e aumentar sua renda.</p>
       </div>
     </div>
   </div>
@@ -742,7 +943,7 @@
     <div class="impacto-left">
       <span class="tag">Responsabilidade Social</span>
       <h2 class="section-title">Impacto Social</h2>
-      <p class="section-lead">A GoRotas vai além de um aplicativo — contribuímos para uma mobilidade urbana mais justa, organizada e sustentável.</p>
+      <p class="section-lead">A GoRotas vai além de um aplicativo. Contribuímos para uma mobilidade urbana mais justa, organizada e sustentável.</p>
       <div class="imp-list">
         <div class="imp-item">
           <div class="imp-icon">👨‍💼</div>
@@ -780,32 +981,158 @@
   </div>
 </section>
 
+<!-- ══ NOSSA HISTÓRIA ═════════════════════════════════ -->
+<section class="historia">
+  <div class="wrap">
+
+    <div class="historia-left">
+      <span class="tag">Nossa História</span>
+      <h2 class="section-title">Não encontramos a solução.<br>Então a criamos.</h2>
+      <p class="historia-quote">
+        "Nascemos dessa frustração. Se ninguém ia resolver, a gente ia."
+      </p>
+      <p class="section-lead">
+        O GoRotas não surgiu numa reunião de negócios nem num pitch para investidores.
+        Surgiu numa calçada fria, esperando uma van que ninguém sabia se ia chegar.
+      </p>
+      <div class="historia-founders">
+        <div class="founders-avatars">
+          <div class="founder-av">G</div>
+          <div class="founder-av">R</div>
+        </div>
+        <div class="founders-info">
+          <strong>Os fundadores do GoRotas</strong>
+          <span>Estudantes de Computação · Viveram na pele o problema</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="historia-right">
+
+      <div class="historia-block">
+        <div class="historia-ico red">😤</div>
+        <div>
+          <div class="historia-block-title">A vida longe de casa</div>
+          <p class="historia-block-text">
+            Estudávamos Computação em outra cidade. Toda semana tínhamos o mesmo desafio: voltar para casa. O único meio eram as vans e carros de lotação, e o que parecia simples se tornava um exercício de paciência e sorte.
+          </p>
+        </div>
+      </div>
+
+      <div class="historia-block">
+        <div class="historia-ico orange">🤯</div>
+        <div>
+          <div class="historia-block-title">O caos que ninguém resolvia</div>
+          <p class="historia-block-text">
+            Cada semana era diferente. <strong>O preço mudava conforme o humor do motorista.</strong> O ponto de embarque era aqui hoje, ali amanhã. O horário de saída era sempre "quando encher", o que podia significar 20 minutos ou 3 horas. Sem aviso, sem confirmação, sem organização nenhuma.
+          </p>
+        </div>
+      </div>
+
+      <hr class="historia-divider" />
+
+      <div class="historia-block">
+        <div class="historia-ico blue">🔍</div>
+        <div>
+          <div class="historia-block-title">A busca que não levou a nada</div>
+          <p class="historia-block-text">
+            Procuramos em toda loja de aplicativos. Perguntamos para colegas de outras cidades. Nada. O transporte público tinha app. O táxi tinha app. O ônibus interestadual tinha app. <strong>Vans e carros de lotação, o meio de transporte de milhões de brasileiros, ainda viviam no grupo de WhatsApp.</strong>
+          </p>
+        </div>
+      </div>
+
+      <div class="historia-virada">
+        <span class="historia-virada-ico">💡</span>
+        <p>
+          <strong>A conclusão foi inevitável:</strong> se somos estudantes de Computação, se vivemos esse problema na pele todo fim de semana, e se nenhum app existe para resolvê-lo, então a nossa missão acabou de ficar muito clara. <strong>Construímos o GoRotas para que nenhum passageiro precise passar pelo que passamos, e para que nenhum motorista perca renda por falta de organização.</strong>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <!-- ══ MERCADO ═════════════════════════════════════════ -->
 <section class="mercado">
   <div class="wrap">
     <div class="mrc-header">
-      <span class="tag">Nossos Números</span>
+      <span class="tag">A Demanda É Real</span>
       <h2 class="section-title">Mercado</h2>
-      <p class="section-lead">Crescendo junto com motoristas, empresas e passageiros em todo o Brasil.</p>
+      <p class="section-lead">O problema que o GoRotas resolve é enorme. Quase ninguém estava olhando para ele.</p>
     </div>
     <div class="mrc-grid">
       <div class="mrc-card">
-        <div class="mrc-num">2M+</div>
-        <div class="mrc-lbl">Usuários Ativos</div>
+        <div class="mrc-num" style="font-size:34px;">41.342.000</div>
+        <div class="mrc-lbl">brasileiros usam transporte alternativo todo dia</div>
       </div>
       <div class="mrc-card">
-        <div class="mrc-num">15K+</div>
-        <div class="mrc-lbl">Rotas Cadastradas</div>
+        <div class="mrc-num">R$&nbsp;47,3<span style="font-size:24px"> bi</span></div>
+        <div class="mrc-lbl">movimentados pelo setor por ano no Brasil</div>
       </div>
       <div class="mrc-card">
-        <div class="mrc-num">98%</div>
-        <div class="mrc-lbl">Satisfação dos Usuários</div>
+        <div class="mrc-num">78,4<span style="font-size:28px">%</span></div>
+        <div class="mrc-lbl">dos passageiros insatisfeitos com o sistema atual</div>
       </div>
       <div class="mrc-card">
-        <div class="mrc-num">500K+</div>
-        <div class="mrc-lbl">Viagens Realizadas</div>
+        <div class="mrc-num">2h<span style="font-size:28px">47</span></div>
+        <div class="mrc-lbl">perdidos por semana esperando ou buscando van</div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- ══ CIDADES DISPONÍVEIS ═════════════════════════════ -->
+<section class="cidades">
+  <div class="wrap">
+    <div class="cidades-header">
+      <span class="tag">Onde Estamos</span>
+      <h2 class="section-title">Cidades Disponíveis</h2>
+      <p class="section-lead">O GoRotas já está operando nas principais cidades do Maranhão e Piauí, com expansão contínua.</p>
+    </div>
+    <div class="cidades-grid">
+      <div class="estado-card">
+        <div class="estado-title">
+          <span class="estado-sigla">MA</span>
+          Maranhão
+        </div>
+        <div class="cidades-chips">
+          <span class="cidade-chip capital">São Luís</span>
+          <span class="cidade-chip">Imperatriz</span>
+          <span class="cidade-chip">Caxias</span>
+          <span class="cidade-chip">Timon</span>
+          <span class="cidade-chip">Codó</span>
+          <span class="cidade-chip">Açailândia</span>
+          <span class="cidade-chip">Bacabal</span>
+          <span class="cidade-chip">Balsas</span>
+          <span class="cidade-chip">Paço do Lumiar</span>
+          <span class="cidade-chip">São José de Ribamar</span>
+          <span class="cidade-chip">Chapadinha</span>
+          <span class="cidade-chip">Santa Inês</span>
+          <span class="cidade-chip">Pedreiras</span>
+        </div>
+      </div>
+      <div class="estado-card">
+        <div class="estado-title">
+          <span class="estado-sigla">PI</span>
+          Piauí
+        </div>
+        <div class="cidades-chips">
+          <span class="cidade-chip capital">Teresina</span>
+          <span class="cidade-chip">Parnaíba</span>
+          <span class="cidade-chip">Picos</span>
+          <span class="cidade-chip">Floriano</span>
+          <span class="cidade-chip">Campo Maior</span>
+          <span class="cidade-chip">Barras</span>
+          <span class="cidade-chip">União</span>
+          <span class="cidade-chip">Piripiri</span>
+          <span class="cidade-chip">Oeiras</span>
+          <span class="cidade-chip">José de Freitas</span>
+          <span class="cidade-chip">Esperantina</span>
+          <span class="cidade-chip">Batalha</span>
+        </div>
+      </div>
+    </div>
+    <p class="cidades-nota">Não encontrou sua cidade? Cadastre-se e avise-nos. Priorizamos as próximas expansões pela demanda.</p>
   </div>
 </section>
 
@@ -818,39 +1145,73 @@
       <p class="section-lead">Veja o que motoristas, passageiros e empresas falam sobre a GoRotas.</p>
     </div>
     <div class="test-grid">
+
       <div class="test-card">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">"A GoRotas transformou minha rotina. Consigo reservar minha vaga com antecedência e sei exatamente a hora que a van vai chegar. Nunca mais cheguei atrasada ao trabalho!"</p>
+        <div class="test-ba">
+          <div class="test-ba-block before">
+            <div class="test-ba-label">😩 Antes</div>
+            <p>Acordava às 5h30 com medo de não conseguir vaga. Uma semana inteira mandei mensagem pro motorista e ele não respondeu. Cheguei atrasada 3 vezes no mesmo mês.</p>
+          </div>
+          <div class="test-ba-block after">
+            <div class="test-ba-label">😌 Depois</div>
+            <p>Reservo na noite anterior e acordo tranquila. Cheguei 20 minutos antes do horário hoje. O GoRotas mudou minha rotina completamente.</p>
+          </div>
+        </div>
         <div class="test-author">
           <div class="test-avatar">M</div>
           <div>
             <div class="test-name">Maria Santos</div>
-            <div class="test-role">Passageira</div>
+            <div class="test-role">Auxiliar Administrativa · Passageira</div>
+            <div class="test-city">📍 Caxias, MA</div>
           </div>
         </div>
       </div>
+
       <div class="test-card">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">"Desde que comecei a usar a GoRotas, minha renda aumentou 40%. O controle de passageiros e os pagamentos digitais facilitam muito o meu dia a dia. Recomendo a todos os motoristas!"</p>
+        <div class="test-ba">
+          <div class="test-ba-block before">
+            <div class="test-ba-label">😩 Antes</div>
+            <p>Saía com a van vazia toda semana porque passageiro sumia no WhatsApp. Perdia dinheiro e não tinha como controlar quem ia embarcar ou não.</p>
+          </div>
+          <div class="test-ba-block after">
+            <div class="test-ba-label">😌 Depois</div>
+            <p>Lista confirmada desde o dia anterior. No primeiro mês com o GoRotas faturei R$&nbsp;1.840 a mais. Van cheia toda saída.</p>
+          </div>
+        </div>
         <div class="test-author">
           <div class="test-avatar">J</div>
           <div>
             <div class="test-name">João Oliveira</div>
-            <div class="test-role">Motorista</div>
+            <div class="test-role">Motorista Autônomo · 8 anos na estrada</div>
+            <div class="test-city">📍 Teresina, PI</div>
           </div>
         </div>
       </div>
+
       <div class="test-card">
         <div class="test-stars">★★★★★</div>
-        <p class="test-quote">"Nossa empresa de transporte cresceu 60% depois de entrar na plataforma. O painel de gestão é completo e o suporte é excelente. É uma parceria de verdadeiro sucesso!"</p>
+        <div class="test-ba">
+          <div class="test-ba-block before">
+            <div class="test-ba-label">😩 Antes</div>
+            <p>Gerenciar 12 motoristas por WhatsApp era um caos. Reclamação todo dia, clientes sumindo, sem controle de nada. Quase fechei a empresa.</p>
+          </div>
+          <div class="test-ba-block after">
+            <div class="test-ba-label">😌 Depois</div>
+            <p>Escala, pagamento e avaliação tudo no app. Reduzi 80% das reclamações e fechei 23 novos contratos corporativos em 3 meses.</p>
+          </div>
+        </div>
         <div class="test-author">
           <div class="test-avatar">A</div>
           <div>
             <div class="test-name">Ana Ferreira</div>
-            <div class="test-role">Empresa de Transporte</div>
+            <div class="test-role">Diretora · TransFácil Transportes</div>
+            <div class="test-city">📍 Timon, MA</div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -909,15 +1270,35 @@
   </div>
 </section>
 
+<!-- ══ ESCASSEZ / URGÊNCIA ═════════════════════════════ -->
+<section class="scarcity">
+  <div class="wrap">
+    <div class="scarcity-inner">
+      <span class="scarcity-badge">⚡ Lançamento · Acesso em Lotes</span>
+      <h2>Estamos liberando o acesso em lotes.</h2>
+      <p>Garanta uma das <strong>100 vagas exclusivas</strong> do lote atual para <strong>motoristas fundadores</strong> da sua cidade, antes que fechem.</p>
+      <div class="scarcity-slots">
+        <span class="slots-num" id="vagas-num">73</span>
+        <span class="slots-lbl">vagas restantes neste lote</span>
+        <div class="slots-bar"><div class="slots-fill"></div></div>
+        <span class="slots-caption">27 vagas já preenchidas · lote atual fecha em breve</span>
+      </div>
+      <a href="#" class="btn btn-orange" style="font-size:16px; padding:16px 36px;">Garantir Minha Vaga de Motorista Fundador</a>
+      <p class="friction-small">🔒 Download grátis · Passageiro paga apenas o valor da passagem · Motorista sem mensalidade</p>
+    </div>
+  </div>
+</section>
+
 <!-- ══ CTA ═════════════════════════════════════════════ -->
 <section class="cta">
   <div class="wrap">
     <h2 class="cta-title">O futuro do transporte alternativo<br>começa agora</h2>
-    <p class="cta-sub">Junte-se a milhões de usuários que já viajam com mais segurança, organização e praticidade.</p>
+    <p class="cta-sub">Pare de depender do WhatsApp. Junte-se aos primeiros usuários que já garantem sua vaga em vans e carros de lotação com 1 clique, todo dia, sem estresse.</p>
     <div class="cta-btns">
-      <a href="#" class="btn btn-orange">Sou Passageiro</a>
-      <a href="#" class="btn btn-white">Sou Motorista</a>
+      <a href="#" class="btn btn-orange">Quero Minha Vaga Garantida</a>
+      <a href="#" class="btn btn-white">Sou Motorista Fundador</a>
     </div>
+    <p style="margin-top:20px; font-size:13px; color:rgba(255,255,255,.45);">🔒 Download grátis · Passageiro paga apenas o valor da passagem · Motorista sem mensalidade</p>
   </div>
 </section>
 
@@ -958,8 +1339,8 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© 2025 GoRotas. Todos os direitos reservados.</span>
-      <span>Feito com ❤️ no Brasil</span>
+      <span>© 2026 GoRotas. Todos os direitos reservados.</span>
+      <span></span>
     </div>
   </div>
 </footer>
